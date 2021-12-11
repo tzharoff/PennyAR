@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5385535184135485150}
   - component: {fileID: 5385535184135485151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,9 +45,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 1855340746554395461, guid: 49011e57640af4346b984abcfb1cf581, type: 3}
-  DistanceToCheck: 0.001
-  forwardSpeed: 0.01
+  DistanceToCheck: 0.0001
+  shootDistance: 0.001
+  forwardSpeed: 10000
   sphereSize: 0.005
+  autoDestructTime: 2.5
+  layers:
+    serializedVersion: 2
+    m_Bits: 23
 --- !u!1001 &5385535182931986325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,6 +63,10 @@ PrefabInstance:
     - target: {fileID: 122648, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
       propertyPath: m_Name
       value: LaserBlast
+      objectReference: {fileID: 0}
+    - target: {fileID: 122648, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
       propertyPath: m_RootOrder
