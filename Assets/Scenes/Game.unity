@@ -809,6 +809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1494872610}
+  - component: {fileID: 1494872611}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -831,6 +832,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494872611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494872609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd32e60f706da514287941befecd9b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
+  DistanceToCheck: 0.001
+  forwardSpeed: 0.01
+  sphereSize: 0.005
 --- !u!21 &1849205263
 Material:
   serializedVersion: 6
