@@ -6,6 +6,7 @@ public class Blaster : MonoBehaviour
 {
     [SerializeField] GameObject bullet;
     [SerializeField] Transform[] blasterSpots;
+    [SerializeField] Camera arCamera;
     private int currentBlaster;
 
     public void Blast()
@@ -16,6 +17,6 @@ public class Blaster : MonoBehaviour
             currentBlaster = 0;
         }
         Debug.Log($"currentBlaster");
-        Instantiate(bullet, blasterSpots[currentBlaster].position,blasterSpots[currentBlaster].rotation);
+        Instantiate(bullet, blasterSpots[currentBlaster].position, transform.rotation);
     }
 }
