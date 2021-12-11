@@ -8,6 +8,12 @@ public class Laser : MonoBehaviour
     [SerializeField] float DistanceToCheck = 0.001f;
     [SerializeField] float forwardSpeed = 0.01f;
     [SerializeField] float sphereSize = 0.005f;
+    [SerializeField] float autoDestructTime = 1.5f;
+
+    private void Start()
+    {
+        Destroy(gameObject, autoDestructTime);
+    }
 
     // Update is called once per frame
     void Update()
