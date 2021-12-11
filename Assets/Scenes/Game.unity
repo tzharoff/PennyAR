@@ -579,7 +579,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 119
+    m_Bits: 247
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -699,6 +699,7 @@ MonoBehaviour:
   blasterSpots:
   - {fileID: 729701345}
   - {fileID: 299435090}
+  arCamera: {fileID: 0}
 --- !u!1 &1377745963
 GameObject:
   m_ObjectHideFlags: 0

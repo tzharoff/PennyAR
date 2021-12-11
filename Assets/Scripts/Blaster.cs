@@ -17,6 +17,6 @@ public class Blaster : MonoBehaviour
             currentBlaster = 0;
         }
         Debug.Log($"currentBlaster");
-        Instantiate(bullet, blasterSpots[currentBlaster].position, transform.rotation);
+        Instantiate(bullet, blasterSpots[currentBlaster].position, transform.rotation,transform);
     }
 }

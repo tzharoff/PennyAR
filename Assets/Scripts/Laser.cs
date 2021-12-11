@@ -11,6 +11,7 @@ public class Laser : MonoBehaviour
     [SerializeField] float sphereSize = 0.005f;
     [SerializeField] float autoDestructTime = 1.5f;
     [SerializeField] LayerMask layers;
+    [SerializeField] Camera arCamera;
 
     private Vector3 startPosition;
     private Vector3 destinationPosition;
@@ -20,8 +21,7 @@ public class Laser : MonoBehaviour
     {
         Destroy(gameObject, autoDestructTime);
         startPosition = transform.position;
-        destinationPosition = transform.forward + new Vector3(0f, 0f, shootDistance);
-        //GetComponent<Rigidbody>().AddForce(transform.forward * forwardSpeed);
+        destinationPosition = transform.position + (transform.forward + new Vector3(0f, 0f, shootDistance));
     }
 
     // Update is called once per frame
@@ -29,7 +29,6 @@ public class Laser : MonoBehaviour
     {
         timer += Time.deltaTime;
         transform.position = Vector3.Lerp(startPosition, destinationPosition, timer / autoDestructTime);
-        //transform.position += transform.forward + new Vector3(0f, 0f, forwardSpeed * Time.deltaTime);
         Ray fRay = new Ray(transform.position, transform.forward);
         if(Physics.SphereCast(fRay, sphereSize, out RaycastHit hit,DistanceToCheck,layers))
         {
