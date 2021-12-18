@@ -1144,57 +1144,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1408725157814487609, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2930459272432945957, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
       propertyPath: m_Name
       value: ActionZone
-      objectReference: {fileID: 0}
-    - target: {fileID: 3309322667317351812, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4536784051714305836, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5325031592274606067, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5567056070799156545, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5637653193924316934, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6166103819579342339, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542384552834071042, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770662427378508459, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7615732788392555346, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7937899822606323097, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8201378259191175559, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
