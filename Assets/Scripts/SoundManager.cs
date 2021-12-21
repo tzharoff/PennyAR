@@ -16,13 +16,13 @@ public class SoundManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Laser.ExplosionCaller += PlayExplosion;
+        Planet.ExplosionCaller += PlayExplosion;
         Blaster.BlasterCaller += PlayBlaster;
     }
 
     private void OnDisable()
     {
-        Laser.ExplosionCaller -= PlayExplosion;
+        Planet.ExplosionCaller -= PlayExplosion;
         Blaster.BlasterCaller -= PlayBlaster;
     }
 

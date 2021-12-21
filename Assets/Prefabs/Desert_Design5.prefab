@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 197614944422896714}
   m_Layer: 7
   m_Name: Desert_Design5
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 100002, guid: f36e3b1ff9efea849bc40abe16c513a0, type: 3}
   spinSpeed: 75
 --- !u!135 &3516889824843903035
 SphereCollider:
@@ -124,4 +125,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 1.5

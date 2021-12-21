@@ -5,9 +5,6 @@ using UnityEngine.Events;
 
 public class Laser : MonoBehaviour
 {
-    public delegate void ExplosionPublisher();
-    public static event ExplosionPublisher ExplosionCaller;
-
     [SerializeField] GameObject goSplosion;
     [SerializeField] float DistanceToCheck = 1f;
     [SerializeField] float shootDistance = 1f;
@@ -37,11 +34,14 @@ public class Laser : MonoBehaviour
         Ray fRay = new Ray(transform.position, transform.forward);
         if(Physics.SphereCast(fRay, sphereSize, out RaycastHit hit, DistanceToCheck,layers))
         {
+            /*
             Debug.Log($"Hit {hit.collider.gameObject}");
             Instantiate(goSplosion, hit.collider.gameObject.transform.position,Quaternion.identity);
             Destroy(hit.collider.gameObject);
             PlanetSpawner.instance.RemovePlanet(hit.collider.gameObject);
             if(ExplosionCaller !=null) ExplosionCaller();
+            */
+            hit.collider.gameObject.GetComponent<Planet>().Explode();
             Destroy(gameObject);
         }
     }

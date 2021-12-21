@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Blaster : MonoBehaviour
 {
@@ -10,17 +11,28 @@ public class Blaster : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] Transform[] blasterSpots;
     [SerializeField] Camera arCamera;
-    private int currentBlaster;
 
+    //[SerializeField] GameObject goSplosion;
+    private int currentBlaster;
     public void Blast()
     {
-        currentBlaster++;
-        if (currentBlaster >= blasterSpots.Length)
-        {
-            currentBlaster = 0;
+        // single line if (statement) ? true : false;
+        Ray shootFromCamera = arCamera.ScreenPointToRay(Touchscreen.current.position.ReadValue());
+        
+        if(Physics.Raycast(shootFromCamera, out RaycastHit hit)){
+            if(hit.collider.gameObject.CompareTag("Planet")){
+                hit.collider.gameObject.GetComponent<Planet>().Explode();
+                BlasterCaller?.Invoke();
+            }
+        } else {
+            currentBlaster++;
+            if (currentBlaster >= blasterSpots.Length)
+            {
+                currentBlaster = 0;
+            }
+            BlasterCaller?.Invoke();        
+            Instantiate(bullet, blasterSpots[currentBlaster].position, blasterSpots[currentBlaster].rotation, transform);
+            //Debug.DrawRay(blasterSpots[currentBlaster].position, blasterSpots[currentBlaster].forward * 100f, Color.blue, 6f);
         }
-        if (BlasterCaller != null) BlasterCaller();
-        Instantiate(bullet, blasterSpots[currentBlaster].position, blasterSpots[currentBlaster].rotation, transform);
-        Debug.DrawRay(blasterSpots[currentBlaster].position, blasterSpots[currentBlaster].forward * 100f, Color.blue, 6f);
     }
 }

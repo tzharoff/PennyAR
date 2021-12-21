@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4392982822282687519}
   m_Layer: 7
   m_Name: Alien_Design3
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,4 +110,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 100002, guid: f36e3b1ff9efea849bc40abe16c513a0, type: 3}
   spinSpeed: 50

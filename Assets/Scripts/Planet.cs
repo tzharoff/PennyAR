@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Planet : MonoBehaviour
 {
+    public delegate void ExplosionPublisher();
+    public static event ExplosionPublisher ExplosionCaller;
+
+    [SerializeField] private GameObject goSplosion;
+
     [SerializeField] float spinSpeed = 1.5f;
 
     // Start is called before the first frame update
@@ -16,5 +21,12 @@ public class Planet : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(0f, spinSpeed * Time.deltaTime, 0f));
+    }
+
+    public void Explode(){
+        Instantiate(goSplosion, transform.position,Quaternion.identity);
+        PlanetSpawner.instance.RemovePlanet(gameObject);
+        ExplosionCaller?.Invoke();
+        Destroy(gameObject);
     }
 }
