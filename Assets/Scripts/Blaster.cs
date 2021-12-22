@@ -8,12 +8,25 @@ public class Blaster : MonoBehaviour
     public delegate void BlasterEvent();
     public static event BlasterEvent BlasterCaller;
 
+    [SerializeField] private InputActionReference actionReference;
+
     [SerializeField] GameObject bullet;
     [SerializeField] Transform[] blasterSpots;
     [SerializeField] Camera arCamera;
 
     //[SerializeField] GameObject goSplosion;
     private int currentBlaster;
+    private void OnEnable(){
+        actionReference.action.Enable();
+    }
+    private void OnDisable(){
+        actionReference.action.Disable();
+    }
+
+    private void Start(){
+        actionReference.action.performed += context => Blast();
+    }
+
     public void Blast()
     {
         // single line if (statement) ? true : false;

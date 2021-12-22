@@ -25,6 +25,7 @@ public class ScoreManager : MonoBehaviour
     
     private void OnEnable(){
         Planet.ExplosionCaller += AddScore;
+        Screen.sleepTimeout = SleepTimeout.SystemSetting;
     }
 
     private void OnDisable(){

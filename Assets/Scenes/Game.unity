@@ -521,7 +521,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &632950513
 GameObject:
@@ -654,7 +654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &758541968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1165,6 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ecc29aecff7eeb49ab78bcd4bade571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actionReference: {fileID: 2521939164032792801, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   bullet: {fileID: 5385535184135485149, guid: 9c90d7a6ef14ca4458c323cee9fe0229, type: 3}
   blasterSpots:
   - {fileID: 729701345}
@@ -1505,7 +1506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 825127895878804349, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 825127895878804349, guid: e6801b6902df2aa4cbe0b73bf109e641, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1571,7 +1572,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1900265290
 RectTransform:
   m_ObjectHideFlags: 0
