@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 25
 --- !u!1 &1425982768930240120
 GameObject:
@@ -183,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 50
 --- !u!1 &2113350761059910143
 GameObject:
@@ -227,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 5
 --- !u!1 &2930459272432945957
 GameObject:
@@ -757,6 +760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 75
 --- !u!1 &8604890657045290556
 GameObject:
@@ -801,6 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 15
 --- !u!1 &8881624417742250012
 GameObject:
@@ -845,6 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db75d79effa0d34f96852c2495c749e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goSplosion: {fileID: 0}
   spinSpeed: 10
 --- !u!1 &9219974146241339520
 GameObject:
