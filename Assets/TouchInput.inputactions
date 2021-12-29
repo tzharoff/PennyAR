@@ -1,0 +1,45 @@
+{
+    "name": "TouchInput",
+    "maps": [
+        {
+            "name": "TouchInput",
+            "id": "3f89116c-9dd4-4dba-95d6-27463b486d9f",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "PassThrough",
+                    "id": "22e3a811-3ad4-4961-bba4-49cccb89d835",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "0ca162ac-ee3f-479c-ae9e-de1481b4c860",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ff5b3769-9b5d-4bdb-ad1e-8ab95824ed24",
+                    "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
