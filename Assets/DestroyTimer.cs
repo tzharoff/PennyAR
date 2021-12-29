@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestroyTimer : MonoBehaviour
 {
+    //blah
     // Start is called before the first frame update
     void Start()
     {
