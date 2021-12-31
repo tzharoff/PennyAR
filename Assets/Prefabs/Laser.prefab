@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 100002, guid: f36e3b1ff9efea849bc40abe16c513a0, type: 3}
-  DistanceToCheck: 0.005
+  DistanceToCheck: 0.015
   shootDistance: 3
-  sphereSize: 0.0005
+  sphereSize: 0.005
   autoDestructTime: 1
   layers:
     serializedVersion: 2
@@ -72,8 +72,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 436056, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.00018715001
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 436056, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 436056, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -122,6 +130,18 @@ PrefabInstance:
     - target: {fileID: 3305964, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
+      propertyPath: m_lineColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
+      propertyPath: m_lineColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475718, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}
+      propertyPath: m_lineColor.r
+      value: 0.44477606
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6023719ea543e4c4babfe859d65f95c4, type: 3}

@@ -116,7 +116,7 @@ MonoBehaviour:
   spinMinSpeed: 35
   spinMaxSpeed: 75
   maxScale: 0.25
-  minScale: 0.5
+  minScale: 0.15
 --- !u!114 &-1162654096854911026
 MonoBehaviour:
   m_ObjectHideFlags: 0

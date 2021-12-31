@@ -104,7 +104,7 @@ MonoBehaviour:
   spinMinSpeed: 35
   spinMaxSpeed: 75
   maxScale: 0.25
-  minScale: 0.5
+  minScale: 0.15
 --- !u!135 &3516889824843903035
 SphereCollider:
   m_ObjectHideFlags: 0
