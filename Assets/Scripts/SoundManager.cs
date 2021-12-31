@@ -41,6 +41,7 @@ public class SoundManager : MonoBehaviour
 
     private void PlayAlienLaugh()
     {
+        //don't play a sound if one is playing
         if (!asLaugh.isPlaying && !asThreat.isPlaying)
         {
             AudioClip laugh = alienLaughs[Random.Range(0, alienLaughs.Length - 1)];
@@ -50,6 +51,7 @@ public class SoundManager : MonoBehaviour
 
     private void PlayAlienThreat()
     {
+        //don't play a round if one is playing
         if (!asThreat.isPlaying && !asLaugh.isPlaying)
         {
             AudioClip threat = alienThreats[Random.Range(0, alienThreats.Length - 1)];

@@ -14,13 +14,16 @@ public class ScoreManager : MonoBehaviour
 #endregion singleton
 
     [SerializeField] private TMP_Text tmpScore;
+    [SerializeField] private TMP_Text tmpScoreOutline;
 
     private int score;
 
     private int Score {
         get { return score;}
         set {score = value;
-            tmpScore.text = $"{score}"; }
+            tmpScore.text = $"{score}";
+            tmpScoreOutline.text = $"{score}";
+        }
     }
     
     private void OnEnable(){
