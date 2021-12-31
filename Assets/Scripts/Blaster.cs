@@ -8,6 +8,9 @@ public class Blaster : MonoBehaviour
     public delegate void BlasterEvent();
     public static event BlasterEvent BlasterCaller;
 
+    public delegate void ThreatResetEvent();
+    public static event ThreatResetEvent ThreatCaller;
+
     [SerializeField] private InputActionReference actionReference;
 
     [SerializeField] GameObject bullet;
@@ -35,6 +38,10 @@ public class Blaster : MonoBehaviour
         if(Physics.Raycast(shootFromCamera, out RaycastHit hit)){
             if(hit.collider.gameObject.CompareTag("Planet")){
                 hit.collider.gameObject.GetComponent<Planet>().Explode();
+                if(Random.Range(0,100) == 2)
+                {
+                    ThreatCaller?.Invoke();
+                }
                 BlasterCaller?.Invoke();
             }
         } else {

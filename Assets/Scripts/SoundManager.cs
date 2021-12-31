@@ -12,22 +12,49 @@ public class SoundManager : MonoBehaviour
     [Header("AudioSources")]
     [SerializeField] private AudioSource asShoot;
     [SerializeField] private AudioSource asExplosion;
+    [SerializeField] private AudioSource asLaugh;
+    [SerializeField] private AudioSource asThreat;
 
+    [Header("Alien Sounds")]
+    [SerializeField] private AudioClip[] alienLaughs;
+    [SerializeField] private AudioClip[] alienThreats;
 
     private void OnEnable()
     {
         Planet.ExplosionCaller += PlayExplosion;
         Blaster.BlasterCaller += PlayBlaster;
+        RandomSounds.AlienLaugh += PlayAlienLaugh;
+        RandomSounds.AlienThreat += PlayAlienThreat;
     }
 
     private void OnDisable()
     {
         Planet.ExplosionCaller -= PlayExplosion;
         Blaster.BlasterCaller -= PlayBlaster;
+        RandomSounds.AlienLaugh -= PlayAlienLaugh;
+        RandomSounds.AlienThreat -= PlayAlienThreat;
     }
 
     private void Start()
     {
+    }
+
+    private void PlayAlienLaugh()
+    {
+        if (!asLaugh.isPlaying && !asThreat.isPlaying)
+        {
+            AudioClip laugh = alienLaughs[Random.Range(0, alienLaughs.Length - 1)];
+            asLaugh.PlayOneShot(laugh);
+        }
+    }
+
+    private void PlayAlienThreat()
+    {
+        if (!asThreat.isPlaying && !asLaugh.isPlaying)
+        {
+            AudioClip threat = alienThreats[Random.Range(0, alienThreats.Length - 1)];
+            asThreat.PlayOneShot(threat);
+        }
     }
 
     private void PlayBlaster()
