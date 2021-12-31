@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2817571197527563544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -113,7 +113,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 100002, guid: f36e3b1ff9efea849bc40abe16c513a0, type: 3}
-  spinSpeed: 75
+  spinMinSpeed: 35
+  spinMaxSpeed: 75
+  maxScale: 0.25
+  minScale: 0.5
 --- !u!114 &-55972625479595800
 MonoBehaviour:
   m_ObjectHideFlags: 0

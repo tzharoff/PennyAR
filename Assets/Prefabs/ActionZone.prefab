@@ -74,7 +74,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 0}
-  spinSpeed: 25
+  spinMinSpeed: 35
+  spinMaxSpeed: 50
+  maxScale: 1
+  minScale: 1
 --- !u!1 &1425982768930240120
 GameObject:
   m_ObjectHideFlags: 0
@@ -119,7 +122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 0}
-  spinSpeed: 50
+  spinMinSpeed: 35
+  spinMaxSpeed: 75
+  maxScale: 1
+  minScale: 1
 --- !u!1 &2113350761059910143
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 0}
-  spinSpeed: 5
+  spinMinSpeed: 35
+  spinMaxSpeed: 45
+  maxScale: 1
+  minScale: 1
 --- !u!1 &2930459272432945957
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +253,8 @@ MonoBehaviour:
   - {fileID: 7097550100076099972, guid: 1491e4b12acf2534085ec1f7629b255c, type: 3}
   - {fileID: 1273617684133803641, guid: 522c34c6a4dec77499f7ff7d7e8c698e, type: 3}
   - {fileID: 8539540219810114958, guid: 47d9b6897cefb3e49b164333af583a4b, type: 3}
+  - {fileID: 4843465184393478301, guid: 8bb3ba9ddb519be4b983287de5486a33, type: 3}
+  - {fileID: 4843465184393478301, guid: 8bb3ba9ddb519be4b983287de5486a33, type: 3}
   planetsSpawned: []
   centerOfGalaxy:
   - {fileID: 4761976426490405782}
@@ -417,7 +428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 0}
-  spinSpeed: 75
+  spinMinSpeed: 25
+  spinMaxSpeed: 45
+  maxScale: 1
+  minScale: 1
 --- !u!1 &8604890657045290556
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +476,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 0}
-  spinSpeed: 15
+  spinMinSpeed: 15
+  spinMaxSpeed: 25
+  maxScale: 1
+  minScale: 1
 --- !u!1 &8881624417742250012
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +524,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goSplosion: {fileID: 0}
-  spinSpeed: 10
+  spinMinSpeed: 15
+  spinMaxSpeed: 50
+  maxScale: 1
+  minScale: 1
 --- !u!1 &9219974146241339520
 GameObject:
   m_ObjectHideFlags: 0

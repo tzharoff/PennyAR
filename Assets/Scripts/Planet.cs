@@ -10,14 +10,25 @@ public class Planet : MonoBehaviour
 
     [SerializeField] private GameObject goSplosion;
 
-    [SerializeField] float spinSpeed = 1.5f;
+    [Header("Spin")]
+    [SerializeField] float spinMinSpeed = 1.5f;
+    [SerializeField] float spinMaxSpeed = 2.5f;
+
+    [Header("Scale")]
+    [SerializeField] float maxScale = 0.25f;
+    [SerializeField] float minScale = 0.15f;
 
     private MMFeedbacks Explosion;
+
+    private float spinSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
+        float randomScale = Random.Range(minScale, maxScale);
+        transform.localScale = new Vector3(randomScale, randomScale, randomScale);
         Explosion = GetComponent<MMFeedbacks>();
+        spinSpeed = Random.Range(spinMinSpeed, spinMaxSpeed);
     }
 
     // Update is called once per frame

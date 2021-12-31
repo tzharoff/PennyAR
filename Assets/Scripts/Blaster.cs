@@ -43,6 +43,9 @@ public class Blaster : MonoBehaviour
                     ThreatCaller?.Invoke();
                 }
                 BlasterCaller?.Invoke();
+            } else
+            {
+                Debug.Log($"hit {hit.collider.gameObject.name}");
             }
         } else {
             currentBlaster++;
